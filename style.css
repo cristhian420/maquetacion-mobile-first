@@ -1,0 +1,416 @@
+:root {
+    --dark: #161616;
+    --jet: #363636;
+    --light: #666666;
+    --lime: #55D449;
+    --small: 1.4rem;
+    --medium: 1.6rem;
+    --big: 1.8rem;
+    --principal-title: 3rem;
+    --second-title: 2rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 32rem;
+    background: linear-gradient(207.8deg, var(--dark) 10.69%, var(--light) 100%);
+    height: 37rem;
+    text-align: center;
+    align-items: center;
+
+}
+.header__logo {
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem 0;
+    align-self: center;
+}
+.header__title-container {
+    width: 90%;
+    align-self: center;
+    min-width: 28rem;
+    max-width: 90rem;
+    height: 18rem;
+    color: var(--dark);
+    text-align: justify;
+}
+.header__title-container h1 {
+    font-weight: 700;
+    font-size: var(--principal-title);
+    color: var(--lime);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.header__title-container p {
+    line-height: 1.8rem;
+    font-weight: 500;
+    font-size: var(--small);
+    margin-bottom: 1rem;
+    color: white;
+}
+.header__title-container .header__button {
+    position: absolute;
+    display: flex;
+    text-decoration: none;
+    color: var(--dark);
+    background-color: var(--lime);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    font-size: var(--medium);
+    box-shadow: 0 .1rem 1rem 0 var(--dark);
+    width: 20rem;
+    right: calc(50% - 106px);
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header__title-container .header__button span {
+    display: inline-block;
+    margin-left: 13px;
+    width: 20px;
+    height: 20px;
+    background-image: url('/asset/icons/down.svg');
+    background-size: contain;
+}
+.header__title-container a:hover {
+    background-color: var(--dark);
+    color: var(--lime);
+}
+.header__title-container a:hover span {
+    background-image: url('/asset/icons/down_lime1.svg');
+    background-size: contain;
+}
+.main__section__container {
+    width: 100%;
+    margin-top: 5rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.main__section-text {
+    color: var(--dark);
+    width: 90%;
+}
+.main__section-text h2 {
+    font-weight: 700;
+    text-align: center;
+    font-size: var(--second-title);
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__section-text p {
+    line-height: 1.8rem;
+    font-weight: 400;
+    font-size: var(--small);
+    margin-bottom: 1rem;
+}
+.main__section-text h2 span {
+    display: inline-block;
+    background-image: url("./asset/icons/tattooMachine.svg");
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    margin-right: .5rem;
+}
+.main__section-img {
+    width: 100%;
+    height: 30rem;
+    background-image: url("./asset/img/tattoo_adv.jpeg");
+    background-size: cover;
+}
+.monedas {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.titulo {
+    display: block;
+    margin: 30px 0 8px 0;
+    color: var(--lime);
+    font-weight: 700;
+    font-size: var(--second-title);
+    margin-left: 5px;
+} 
+.tabla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3px;
+    width: 200px;
+    height: 180px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+}
+.moneda { 
+    padding-top: 13px;;  
+    background-color: var(--jet);
+    width: 100%;
+    height: 100%;
+    font-size: var(--medium);
+}
+.valor {
+    font-size: 1.1rem;
+    padding-top: 13px;;  
+    background-color: var(--jet);
+    font-size: var(--small);
+    width: 100%;
+    height: 100%;
+}
+.fecha{
+    width: 100%;
+    text-align: center;
+    margin: 8px auto;
+    margin-bottom: 50px;
+    
+}
+.tabla span:nth-child(1){
+    border-radius: 10px 0 0 0;
+}
+.tabla span:nth-child(2){
+    border-radius: 0 10px 0 0;
+}
+.tabla span:nth-child(7){
+    border-radius: 0 0 0 10px;
+}
+.tabla span:nth-child(8){
+    border-radius: 0 0 10px 0;
+}
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 14px;
+    background-color: var(--dark);
+    color: white;
+}
+.main-product-detail--logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url("./asset/img/logo.svg");
+    background-size: contain;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+.main-product-detail--logo-white {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url("./asset/img/logo-white.svg");
+    background-size: contain;
+    top: -30px;
+    left: calc(50% - 30px);
+}
+.main-product-detail--text {
+    width: 100%;
+    margin: 18px auto;
+    text-align: center;
+}
+.main-product-detail--text h2 {
+    font-weight: 700;
+    margin-bottom: 14px;
+    font-size: var(--second-title);
+    color: white;
+}
+.main-product-detail--text p {
+    color: var(--light);
+    font-size: var(--small);
+}
+.main-product-cards--container {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 15px;
+
+}
+.main-product-detail--card {
+    width: 100%;
+    min-width: 288px;
+    max-width: 400px;
+    min-height: 15rem;
+    background-color: var(--jet);
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.product-detail--logo {
+    width: 30px;
+    height: 30px;
+    background-image: url("./asset/icons/tattooMachine.svg");
+    background-size: cover;
+}
+.product-detail--title {
+    margin: 8px 0 ;
+    font-weight: bold;
+    font-size: var(--big);
+    color: white;
+}
+.product-detail--text {
+    font-size: var(--small);
+    color: var(--light);
+    font-weight: normal;
+} 
+.comodin-section {
+    display: grid;
+    position: relative;
+    place-items: center;
+    grid-template: inherit;
+    height: 65vh;
+    width: 100%;
+
+}
+.comodin-section--img {
+    position: absolute;
+    background-size: contain;
+    height: inherit;
+    width: 100%;
+}
+.comodin-section--text {
+    position: absolute;
+    color: var(--lime);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: .1rem .2rem .3rem var(--dark);
+}
+.plans-section {
+    background-color: #5c5c5c70;
+    width: 100%;
+    height: 95vh;
+}
+.plans-title-container {
+    width: 90%;
+    padding-bottom: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.plans-title{
+    padding: 1.5rem 0;
+    font-size: var(--principal-title);
+}
+.plans-subtitle{
+    font-size: var(--small);
+}
+.plans-section--main-plans-container{
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+.plans-section--main-plans-container .secondary-plan:first-child{
+    position: absolute;
+    left: -15rem;
+}
+.plans-section--main-plans-container .secondary-plan:last-child{
+    position: absolute;
+    right: -15rem;
+}
+.plans-section--main-plans-container .secondary-plan-text:first-child{
+    display: none;
+}
+.plans-section--plans-container {
+    position: relative;
+    background-color: white;
+    width: 55%;
+    min-width: 18rem;
+    max-width: 24rem;
+    height: 24rem;
+    text-align: center;
+    margin: 5rem auto;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px var(--light);
+    display: flex;
+    flex-direction: column;
+    padding: .8rem;
+}
+.plans-advice {
+    position: absolute;
+    width: 12rem;
+    height: 3rem;
+    background-color: var(--lime);
+    color: var(--dark);
+    top: -1.5rem;
+    left: calc(50% - 6rem);
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    font-size: var(--small);
+}
+.plans-type {
+    margin-top: 2rem;
+    font-size: var(--small);
+}
+.plans-cost {
+    margin: 1rem auto;
+    position: relative;
+}
+.plans-cost span {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+.plans-cost sup {
+    font-size: var(--medium);
+    top: .4rem;
+    left: 4.4rem;
+    position: absolute;
+}
+.plans-description {
+    color: var(--light);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.plans-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--lime);
+    border-radius: 8px;
+    height: 4.4rem;
+    width: 90%;
+    background-color: var(--dark);
+    color: var(--lime);
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-size: var(--small);
+    letter-spacing: 1.5px;
+    text-decoration: none;
+}
+.plans-icon {
+    background-image: url('./asset/icons/down_lime1.svg');
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat; 
+    margin-left: 4px;
+}
+.plans-button:hover{
+    color: var(--dark);
+    background-color: var(--lime);
+    border: 2px solid var(--dark);
+}
+.plans-button:hover span {
+        background-image: url('./asset/icons/down.svg');
+}
