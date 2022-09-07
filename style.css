@@ -3,6 +3,7 @@
     --jet: #363636;
     --light: #666666;
     --lime: #55D449;
+    --soft-lime: #6bee5f2a;
     --small: 1.4rem;
     --medium: 1.6rem;
     --big: 1.8rem;
@@ -323,6 +324,14 @@ header {
     scroll-snap-type: x proximity;
     gap: 1rem;
 }
+.plans-section--main-plans-container::-webkit-scrollbar {
+    background-color: var(--soft-lime);
+    height: 3px;
+}
+.plans-section--main-plans-container::-webkit-scrollbar-thumb {
+    background-color: var(--lime);
+    height: 3px;
+}
 
 .plans-section--plans-container {
     position: relative;
@@ -407,4 +416,40 @@ header {
 }
 .plans-button:hover span {
         background-image: url('./asset/icons/down.svg');
+}
+.footer-container {
+    background-color: var(--dark);
+    display: flex;
+}
+.right-footer--list, .left-footer--list {
+    margin: 0;
+    padding: 2rem;
+    width: 50%;
+    height: 10rem;
+    vertical-align: center;
+}
+.right-footer--list ul li, .left-footer--list ul li {
+    list-style: none;
+    margin: .4rem auto;
+}
+.right-footer--list a {
+    text-decoration: none;
+    color: var(--lime);
+}
+.left-footer--list ul {
+    display: flex;
+
+}
+.footer-logo {
+    background-image: url('./asset/img/logo-white.svg');
+    background-size: contain;
+    width: 6rem;
+    height: 6rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.copyright{
+    color: var(--lime);
+    align-self: end;
+    justify-self: end;
 }
