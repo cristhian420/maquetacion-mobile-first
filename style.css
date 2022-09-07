@@ -318,25 +318,19 @@ header {
 .plans-section--main-plans-container{
     display: flex;
     height: auto;
-    width: 100%;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 1rem;
 }
-.plans-section--main-plans-container .secondary-plan:first-child{
-    position: absolute;
-    left: -15rem;
-}
-.plans-section--main-plans-container .secondary-plan:last-child{
-    position: absolute;
-    right: -15rem;
-}
-.plans-section--main-plans-container .secondary-plan-text:first-child{
-    display: none;
-}
+
 .plans-section--plans-container {
     position: relative;
+    scroll-snap-align: center;
     background-color: white;
-    width: 55%;
-    min-width: 18rem;
-    max-width: 24rem;
+    width: 65%;
+    min-width: 20rem;
+    max-width: 30rem;
     height: 24rem;
     text-align: center;
     margin: 5rem auto;
