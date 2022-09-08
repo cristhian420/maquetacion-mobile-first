@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tattoo </title>
+    <title>Tattoo shop</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 750px">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -30,9 +31,17 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla repudiandae blanditiis corrupti sit, sunt incidunt porro tenetur asperiores earum? Provident ut enim suscipit dicta aspernatur voluptatibus architecto illo assumenda minus.
                 </p>
-                <div class="main__section-img"></div>
+                <picture>
+                    <source media="(min-width: 400px)" srcset="./asset/img/tattoo_adv_tablet.png">;
+                    <source media="(min-width: 760px)" srcset="./asset/img/tattoo_Adv_lap.png">;
+                    <img src="./asset/img/tattoo_adv.jpeg" alt="anuncio neon de tattoo" class="main__section-img">
+                </picture>
             </div>
-            <section class="monedas">
+        </section>
+
+            <!-- Tabla creada para clase pero no va con el formato del negocio supuesto -->
+
+            <!-- <section class="monedas">
                 <span class="titulo">Monedas</span>
                 <div class="tabla">
                     <span class="moneda">Bitcoin</span>
@@ -45,8 +54,9 @@
                     <span class="valor">$8,000</span>
                 </div>
                 <span class="fecha">Actualizado: 19 julio 11:30pm</span>
-            </section>
-            </section>
+            </section> -->
+
+
         </section>
         <section class="main-product-detail">
             <span class="main-product-detail--logo"></span>
@@ -64,7 +74,7 @@
                 <article class="main-product-detail--card">
                     <span class="product-detail--logo"></span>
                     <h3 class="product-detail--title">Reserva la cita en linea</h3>
-                    <p class="product-detail--text">Entra en nuestra pagina web y haz la reserva de tu cita para que no esperes al llegar, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officiis voluptatum fugit consequatur accusantium dolorum placeat mollitia amet, eveniet officia, in adipisci facere voluptatibus repellendus ducimus ipsa architecto? Cumque, numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor modi voluptatum architecto nulla enim earum nihil in nemo fugit ullam, laudantium mollitia minus non debitis laborum quo odit eveniet reprehenderit?</p>
+                    <p class="product-detail--text">Entra en nuestra pagina web y haz la reserva de tu cita para que no esperes al llegar</p>
                 </article>
                 <article class="main-product-detail--card">
                     <span class="product-detail--logo"></span>
@@ -74,7 +84,7 @@
             </section>
         </section>
         <section class="comodin-section">
-                <img class="comodin-section--img" src="./asset/img/tattoo.jpeg" alt="persona tatuando">
+                <img class="comodin-section--img" src="./asset/img/tattoo-people.jpeg" alt="persona tatuando">
             <p class="comodin-section--text">Dragon studio ink</p> 
         </section>
 
