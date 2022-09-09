@@ -284,8 +284,9 @@ header {
     width: 100%;
 }
 .comodin-section--img {
-
     width: 100%;
+    min-height: 450px;
+    height: 95vh;
     display: block;
     margin: 0 auto;
     max-width: 100%;
@@ -445,5 +446,6 @@ header {
 }
 .footer-logo {
     width: 6rem;
+    height: 6rem;
 }
 
